@@ -3,11 +3,11 @@
 	$smsGateway = new SmsGateway('devanshngholba@gmail.com', 'fledged');
 
 	$deviceID = 82768;
-	$number = $_GET['n'];
-	echo "$number";
+	$phone = $_GET['phone'];
+	echo "$phone";
 	echo "<br>";
-	$message = $_GET['number'];
-	echo "$message";
+	$otp = $_GET['otp'];
+	echo "$otp";
 	echo "<br>";
 	echo "Sending text...";
 	echo "<br>";
