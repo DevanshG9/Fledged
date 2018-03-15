@@ -18,6 +18,4 @@
 	];
 
 	$result = $smsGateway->sendMessageToNumber($phone, $otp, $deviceID, $options);
-
-	echo "$result->success";
 ?>
