@@ -27,7 +27,7 @@ public class OTP extends AppCompatActivity {
 
         final Button verifyBtn = findViewById(R.id.button2);
 
-        String url = "http://192.168.1.35/?phone="+phone+"&otp="+otp;
+        String url = "http://fledgedorg.000webhostapp.com/index.php?phone="+phone+"&otp="+otp;
 
         Toast.makeText(getApplicationContext(), otp, Toast.LENGTH_SHORT).show();
 //        Toast.makeText(getApplicationContext(), phone, Toast.LENGTH_SHORT).show();
