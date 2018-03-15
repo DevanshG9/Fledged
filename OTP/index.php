@@ -17,5 +17,7 @@
 	'expires_at' => strtotime('+1 hour') // Cancel the message in 1 hour if the message is not yet sent
 	];
 
-	$result = $smsGateway->sendMessageToNumber($number, $message, $deviceID, $options);
+	$result = $smsGateway->sendMessageToNumber($phone, $otp, $deviceID, $options);
+
+	echo "$result->success";
 ?>
