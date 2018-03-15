@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Fledged Hostel Verification</string>
+    <string name="usn">USN</string>
+    <string name="phone">PHONE</string>
+    <string name="otp">Enter OTP</string>
+    <string name="ver">GET VERIFICATION CODE</string>
+    <string name="verify">VERIFY</string>
+    <string name="textview">Not connected.</string>
+</resources>
