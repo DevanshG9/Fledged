@@ -55,7 +55,14 @@ public class Verification extends AppCompatActivity {
     }
 
     private static String getRandom(){
-        int n = (int) (Math.random()*1000000);
-        return Integer.toString(n);
+	boolean done=false;
+        String n; 
+	do {	
+		n = (String) (Math.random()*1000000);
+        	if(n[0]!='0' && n.length()==6){
+			done=true;
+			return n;
+		}
+	} while(!done)
     }
 }
