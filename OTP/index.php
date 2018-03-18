@@ -1,8 +1,7 @@
 <?php
 	include "smsGateway.php";
 	$smsGateway = new SmsGateway('devanshngholba@gmail.com', 'fledged');
-
-	$deviceID = 82768;
+	$deviceID = 83072;
 	$phone = $_GET['phone'];
 	echo "$phone";
 	echo "<br>";
@@ -11,11 +10,6 @@
 	echo "<br>";
 	echo "Sending text...";
 	echo "<br>";
-
-	$options = [
-	'send_at' => strtotime('+10 minutes'), // Send the message in 10 minutes
-	'expires_at' => strtotime('+1 hour') // Cancel the message in 1 hour if the message is not yet sent
-	];
-
+	$options = [];
 	$result = $smsGateway->sendMessageToNumber($phone, $otp, $deviceID, $options);
 ?>
