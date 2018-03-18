@@ -51,18 +51,17 @@ public class Verification extends AppCompatActivity {
                 startActivity(i);
             }
         });
+}
 
-    }
-
-    private static String getRandom(){
-	boolean done=false;
-        String n; 
-	do {	
-		n = (String) (Math.random()*1000000);
-        	if(n[0]!='0' && n.length()==6){
-			done=true;
-			return n;
-		}
-	} while(!done)
-    }
+   private static String getRandom(){
+        boolean done=false;
+        String n;
+        do {
+            n = Integer.toString((int)(Math.random()*1000000));
+            if(n.charAt(0)!='0' && n.length()==6){
+                done=true;
+            }
+        } while(!done);
+      
+}
 }
